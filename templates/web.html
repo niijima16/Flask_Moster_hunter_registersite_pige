@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>メーニュ融合</title>
+    <style>
+    body{
+        margin:0
+        }
+    img{
+        width:100%;
+        height:100%;
+        }
+    .left{
+        float: left;
+        }
+    .header{
+        background-color: #333;
+        }
+    .container{
+        width: 1226px;
+        margin: 0 auto;
+        }
+    .header .menu{
+        float: left;
+        color: white;
+        }
+    .header .menu a{
+            text-decoration: none;
+        }
+    .header .menu a:hover{
+        color: #ff6700;
+        }
+    .header .account{
+        float: right;
+        color: white;
+        text-decoration: none;
+        }
+    .header .account a{
+        text-decoration: none;
+        }
+    .header .account a:hover{
+            color: #ff6700;
+        }
+    .header a{
+        color: #b0b0b0;
+        line-height: 40px;
+        display: inline-block;
+        font-size: 12px;
+        margin-right: 5xp;
+        }
+        body{
+        margin:0
+        }
+<!-- #############################sub_menu ###############################-->
+    .sub_header{
+            height: 100px;
+            }
+
+    .container{
+            width: 1120px;
+            margin: 0 auto;
+            }
+
+    .sub_header .ht{
+            height: 100px;
+            }
+
+    .sub_header .logo{
+            width: 234px;
+            float: left;
+            }
+    .sub_header .logo a{
+            margin-top:22px;
+            display: inline-block;
+            }
+    .sub_header .logo a img{
+            height:56;
+            width:56;
+            }
+
+    .sub_header .menu_list {
+            float: left;
+            color: red;
+            line-height: 100px;
+            }
+    .sub_header .menu_list a {
+            display: inline-block;
+            padding:0 10px;
+            color: #333;
+            font-size: 16px;
+
+            text-decoration: none;
+            }
+
+    .sub_header .menu_list a:hover{
+            color: #ff6700;
+        }
+
+    .sub_header .search{
+            float: right;
+            }
+    .sub_header .search a:hover{
+            color: #ff6700;
+            }
+<!-- #############################shop_page ###############################-->
+    .slider .container{
+    display: inline-block;
+    }
+    .slider .container video{
+    width: 1226px;
+    height: 460px;
+    }
+<!-- ############################# news ###############################-->
+    .news .channel{
+        width: 280px;
+        height: 164px;
+        background-color: #5f5750;
+        }
+    .news .channel .item{
+        width: 76px;
+        height: 82px;
+        float: left;
+        text-align: center;
+        }
+    .news .channel .item a{
+        display:inline-block;
+        font-size: 12px;
+        padding-top:18px;
+        color: #fff;
+        text-align: center;
+        }
+    .news .channel .item img{
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        margin: 0 auto 4px;
+        }
+    .news .list-item{
+        width: 260px;
+        height: 170px;
+        margin: 0px 10px 0 10px;
+        }
+    .news .item img{
+        width:50px;
+        height:50px;
+        }
+    .back{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border: 1px solid green;
+
+        right: 10px;
+        bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<!-- ###############################ファーストメーニュ ################################-->
+<div class="header">
+    <div class="container">
+        <div class="menu">
+            <a>サイトトップ</a>
+            <a>メーニュ</a>
+            <a>商品</a>
+            <a href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fap-northeast-1.console.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26region%3Dap-northeast-1%26state%3DhashArgsFromTB_ap-northeast-1_20627ee5d46d4257&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=pK-U7qqZd2YS0huHEi9W88-gZ-5MIOxXgNkTY5JPSsw&code_challenge_method=SHA-256" target="_blank">クラウド</a>
+            <a>その他</a>
+            </div>
+        <div class="account">
+            <a>ログイン</a>
+            <a href="http://127.0.0.1:5000/info/register" target="_blank">登録</a>
+            <a>info</a>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</div>
+<!--###################################セカンドメーニュ###################################-->
+<div class="sub_header">
+    <div class="container">
+        <div class="ht logo">
+            <a href="https://www.apple.com/jp/" target="_blank">
+              <img src="/static/applelogo.jpg" alt="" style="height: 25%;width:25%;">
+            </a>
+        </div>
+        <div class="ht menu_list">
+            <a href="https://www.apple.com/jp/iphone/" target="_blank">iphone</a>
+            <a href="https://www.apple.com/jp/ipad/" target="_blank">ipad</a>
+            <a href="https://www.apple.com/jp/watch/" target="_blank">watch</a>
+            <a href="https://www.apple.com/jp/mac/" target="_blank">mac</a>
+        </div>
+        <div class="ht search">
+          <a>search</a>
+        </div>
+
+        <div style="clear: both"></div>
+    </div>
+</div>
+<!-- ###############################ショップページ#########################################-->
+<div class="slider">
+    <div class="container">
+        <video autoplay controls loop src="/static/medium_2x.mp4"></video>
+    </div>
+</div>
+<!--###############################ニュース#########################################-->
+<div class="news">
+    <div class="container">
+        <div class="channel left"
+             style="width: 250px;height: 170px;background-color: #333;">
+            <div class="item">
+                <a href="https://www.apple.com/jp/airpods/" target="_blank">
+                <span>airpods</span>
+                </a>
+            </div>
+            <div class="item">
+                <img src="/static/littleairtags.png">
+            </div>
+            <div class="item">
+                <img src="/static/littleipad.png">
+            </div>
+            <div class="item">
+                <img src="/static/littleiphone.png">
+            </div>
+            <div class="item">
+                <img src="/static/littlemac.png">
+            </div>
+            <div class="item">
+                <img src="/static/littlewatch.png">
+            </div>
+            <div class="clear:both"></div>
+        </div>
+        <div class="list-item left">
+            <img src="/static/iphone-15.jpeg">
+        </div><!-- iphonepro -->
+        <div class="list-item left">
+            <img src="/static/iphone-15n.jpeg">
+        </div><!-- iphone -->
+        <div class="list-item left">
+            <img src="/static/watch_s9.jpeg">
+        </div><!-- watch -->
+        <div class="clear: both"></div>
+    </div>
+</div>
+<div class="back"></div>
+</body>
+</html>

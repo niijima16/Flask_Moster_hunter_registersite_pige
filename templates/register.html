@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>登録画面</title>
+    <link rel="stylesheet" href="/static/common.css" />
+</head>
+<body>
+    <h1 class="xx">狩人情報登録</h1>
+    <form method="post" action="/info/register">
+    <div>
+        ユーザーネーム：<input type="text" name="user"/>
+    </div>
+
+    <div>
+        パスワード：<input type="password" name="pwd"/>
+    </div>
+
+    <div>
+        性別：<input type="radio" name="gender" value="1">男性
+        <input type="radio" name="gender" value="2">女性
+    </div>
+
+    <div>
+        得意な武器：
+        <input type="checkbox" name="weapon" value="10">狩猟笛
+        <input type="checkbox" name="weapon" value="11">ランス
+        <input type="checkbox" name="weapon" value="12">太刀
+    </div>
+
+    <div>
+        狩人経験
+        <select  name="experience">
+            <option value="1">0年~1年</option>
+            <option value="3">1~3年</option>
+            <option value="5">3年以上</option>
+        </select>
+    </div>
+
+    <div>
+        その他
+        <div><textarea rows="5"  name="box"></textarea></div>
+    </div>
+
+    <div>　<!--提出ボタン-->
+        <input type="submit" value="提出">
+    </div>
+    </form>
+</body>
+</html>
